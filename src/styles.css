@@ -5,6 +5,13 @@ html {
   margin: auto;
 }
 
+header {
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 1em !important;
+}
+
 .nav {
   margin: auto;
   display: flex;

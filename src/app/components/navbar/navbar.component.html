@@ -1,0 +1,15 @@
+<nav>
+  <ul class="nav">
+    <li class="nav-item">
+      <a class="nav-link" [class]="{'active': !active}" aria-current="page" routerLink="todos">All</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" [class]="{'active': active === 'active'}"
+         [routerLink]="['todos/active', {filter: 'active'}]">Active</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" [class]="{'active': active ==='completed' }"
+         [routerLink]="['todos/completed', {filter: 'completed'}]">Completed</a>
+    </li>
+  </ul>
+</nav>

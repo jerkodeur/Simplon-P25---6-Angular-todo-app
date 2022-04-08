@@ -1,0 +1,32 @@
+input {
+  padding: 0.2em;
+  margin-bottom: 0.5em;
+  width: 85%;
+}
+
+.form-area {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn-area {
+  margin-bottom: 1em;
+}
+
+.btn-area button {
+  padding: 0.35em 1em !important;
+}
+
+@media screen and (min-width: 510px) {
+  .form-area {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .btn-area {
+    margin: inherit;
+  }
+}

@@ -1,0 +1,36 @@
+li,
+ul {
+  list-style-type: none;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+input[type="checkbox"] {
+  margin-right: 0.5em;
+}
+
+.todo-area {
+  display: flex;
+  justify-content: space-between;
+}
+
+section > .btn-area {
+  text-align: right !important;
+  white-space: nowrap;
+  margin-top: 1em;
+}
+
+.material-icons:hover {
+  cursor: pointer !important;
+  color: red;
+}
+.btn .material-icons {
+  font-size: 1em;
+  margin-right: 0.25em;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}

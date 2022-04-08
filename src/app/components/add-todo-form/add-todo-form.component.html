@@ -1,0 +1,8 @@
+<form (ngSubmit)="submitForm(myForm)" #myForm="ngForm">
+  <div class="form-area">
+    <input type="text" placeholder="add details" name="label" ngModel required>
+    <div class="btn-area">
+      <button class=" btn-sm btn-primary" type="submit" [disabled]="myForm.invalid">Add</button>
+    </div>
+  </div>
+</form>

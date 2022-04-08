@@ -1,0 +1,25 @@
+<main>
+  <app-add-todo-form (getTodo)="onGetTodo($event)" *ngIf="filter !== 'completed'"></app-add-todo-form>
+  <section>
+    <div *ngFor="let todo of todos" class="todo-area">
+      <div class="form-group">
+        <input type="checkbox" name="{{todo.id}}" id="{{todo.id}}" (change)="updateTodo(todo)"
+               [checked]="!todo.active">
+        <label for="{{todo.id}}" [ngClass]="{'text-decoration-line-through':  !todo.active}">{{todo.label}}</label>
+      </div>
+      <div class="btn-area">
+        <span class="material-icons" *ngIf="filter == 'completed'" (click)="removeTodo(todo)">
+          delete
+        </span>
+      </div>
+    </div>
+    <div class="btn-area" *ngIf="todos.length > 0 && filter == 'completed'">
+      <button class="btn btn-danger" type="button" (click)="removeCompletedTodo()">
+        <span class="material-icons">
+          delete
+        </span>
+        Delete all
+      </button>
+    </div>
+  </section>
+</main>

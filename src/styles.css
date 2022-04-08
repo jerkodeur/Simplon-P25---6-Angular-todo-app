@@ -1,1 +1,46 @@
 /* You can add global styles to this file, and also import other style files */
+html {
+  width: 60%;
+  min-width: 250px;
+  margin: auto;
+}
+
+.nav {
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.active {
+  border-bottom: 3px solid rgb(72, 70, 167);
+  border-radius: 0px 0 -2px -2px;
+}
+
+.nav-item {
+  margin-bottom: 0.15em;
+}
+
+hr {
+  margin: 0 0 1em !important;
+}
+
+form.form-control {
+  display: flex !important;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.form-control {
+  border: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+form.btn-area {
+  width: 15%;
+}
+
+input[type="text"] {
+  width: 80%;
+}
